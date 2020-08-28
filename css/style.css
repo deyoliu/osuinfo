@@ -1,0 +1,22 @@
+*{
+    font-family: 'Comfortaa', cursive;
+    /* border: 1px solid red; */
+}
+
+body{
+    background-color: rgb(50,50,50);
+}
+
+.navbar{
+    border-bottom: 2px solid rgb(220,220,220);
+}
+
+.navbar-brand span{
+    font-weight: 900;
+    font-size:1.5rem;
+}
+
+.nav-link{
+    font-weight: 600;
+}
+
