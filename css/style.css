@@ -1,5 +1,5 @@
 *{
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa',cursive;
     /* border: 1px solid red; */
 }
 
@@ -17,6 +17,38 @@ body{
 }
 
 .nav-link{
-    font-weight: 600;
+    font-weight: 300;
+}
+
+.nav-text{
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+.nav-drop-text{
+    color: #fff;
+}
+
+.dropdown-item:hover .nav-drop-text{
+    color: #000;
+}
+
+.nav-item{
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.nav-item:hover{
+    background-color: #ff8ee6;
+    transition-duration: 0.15s;
+}
+
+.nav-item:hover .nav-text{
+    color: #000;
+    transition-duration: 0.15s;
+}
+
+.dropdown .bg-dark{
+    background-color: #3b434b !important;
 }
 

@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>osu!Settings</title>
+    <title>osu!info</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,49 +24,49 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">All-Stars</a>
+                <li class="nav-item nav-allstars">
+                    <a class="nav-link " href="#"><span class="nav-text">All-Stars</span></a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item nav-players dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Players
+                        <span class="nav-text">Players</span>
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-light" href="#">3-Digits</a>
-                        <a class="dropdown-item text-light" href="#">4-Digits</a>
-                        <a class="dropdown-item text-light" href="#">5-Digits</a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">3-Digits</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">4-Digits</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">5-Digits</span></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-light" href="#">Badged Players</a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">Badged Players</span></a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Tournaments</a>
+                <li class="nav-item nav-tournaments">
+                    <a class="nav-link " href="#"><span class="nav-text">Tournaments</span></a>
                 </li>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item nav-guides dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Guides
+                        <span class="nav-text">Guides</span>
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-light" href="#">Monitor</a>
-                        <a class="dropdown-item text-light" href="#">Keyboard</a>
-                        <a class="dropdown-item text-light" href="#">Mouse</a>
-                        <a class="dropdown-item text-light" href="#">Mousepad</a>
-                        <a class="dropdown-item text-light" href="#">Mouse Bungee</a>
-                        <a class="dropdown-item text-light" href="#">Tablet</a>
-                        <a class="dropdown-item text-light" href="#">CPU</a>
-                        <a class="dropdown-item text-light" href="#">GPU</a>
-                        <a class="dropdown-item text-light" href="#">Chair</a>
-                        <a class="dropdown-item text-light" href="#">In-game Settings</a>
-                        <a class="dropdown-item text-light" href="#">In-game Skins</a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">Monitor</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">Keyboard</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">Mouse</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">Mousepad</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">Mouse Bungee</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">Tablet</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">CPU</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">GPU</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">Chair</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">In-game Skin</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">In-game Setting</span></a>
                     </div>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Login</a>
+                <li class="nav-item nav-login">
+                    <a class="nav-link" href="#"><span class="nav-text">Login</span></a>
                 </li>
             </ul>
         </div>
@@ -81,9 +83,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script>
-
-    </script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>
