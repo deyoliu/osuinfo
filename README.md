@@ -1,1 +1,1 @@
-# osuinfo
+idk xd
