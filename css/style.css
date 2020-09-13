@@ -5,8 +5,11 @@
 
 body{
     background-color: rgb(50,50,50);
+    border: 10px solid #ff8ee6;
+    height: 100vh;
 }
 
+/* navbar */
 .navbar{
     border-bottom: 2px solid rgb(220,220,220);
 }
