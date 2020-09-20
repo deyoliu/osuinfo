@@ -1,7 +1,16 @@
 /* global */
 *{
     font-family: 'Comfortaa',cursive;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+.container-fluid{
+    width: 80%;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
 }
 
 html,body{
@@ -14,7 +23,6 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 
 body{
     background-color: #323232;
-    border: 10px solid #ff8ee6;
     height: 100vh;
 }
 
@@ -99,6 +107,9 @@ body{
 
 /* footer */
 .footer{
+    width: 100%;
+    position: fixed;
+    left: 0;
     bottom: 0;
     text-align:center;
     border-bottom: 2px solid #dcdcdc;

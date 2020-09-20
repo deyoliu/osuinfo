@@ -1,8 +1,76 @@
+a:hover{
+    text-decoration: none;
+}
+
 .container{
-    width: 80%;
     padding: 0;
 }
 
 .slogan{
     height: 400px;
+}
+
+/* banner */
+section.banner {
+    padding: 0px;
+}
+  
+.banner {
+    background-image: url(../imgs/bg_banner.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .banner-caption {
+    padding: 150px 0px;
+}
+  
+.banner .banner-caption .line-dec {
+    width: 80px;
+    height: 3px;
+    background-color: #ff8ee6;
+} 
+
+.banner .banner-caption h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 42px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+  
+.banner .banner-caption span {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+  
+.banner .banner-caption .blue-button {
+    margin-top: 30px;
+}
+  
+.banner .submit-form {
+    border-bottom: 5px solid #ff8ee6;
+    background-color: #fff;
+    padding: 15px;
+}
+
+#banner-h2,#banner-span{
+    color: #323232;
+}
+
+.slogan-form{
+    width: 100%;
+}
+
+#subform-span{
+    color:#ff7575;
+    transition-duration: .15s;
+}
+
+#subform-span:hover{
+    color: #ff8ee6;
+    transition-duration: .15s;
 }
