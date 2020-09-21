@@ -4,10 +4,6 @@
     /* border: 1px solid red; */
 }
 
-.container-fluid{
-    width: 80%;
-}
-
 .row{
     margin-left: 0;
     margin-right: 0;
@@ -30,11 +26,19 @@ body{
 .navbar{
     border-bottom: 2px solid #dcdcdc;
     padding: 8px 16px;
+    z-index: 9999;
 }
 
 .navbar-brand span{
     font-weight: 900;
     font-size:1.5rem;
+}
+
+.fixedMenu .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .nav-link{
@@ -113,6 +117,7 @@ body{
     bottom: 0;
     text-align:center;
     border-bottom: 2px solid #dcdcdc;
+    z-index: 9999;
 }
 
 .footer span{

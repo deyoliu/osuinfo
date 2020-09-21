@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>osu!info</title>
+    <title>User | osu!info</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/user.css">
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><span><img src="imgs/logo.png" width="25px"></span><span
                 class="ml-1">osu!info</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -82,41 +82,30 @@
         </div>
     </nav>
 
-    <!-- main -->
-    <section class="banner" id="top">
-        <div class="container">
-            <div class="row">
-                <div class="slogan-form">
-                    <div class="banner-caption">
-                        <div class="line-dec"></div>
-                        <h2 id="banner-h2">Best Finder For You</h2>
-                        <span id="banner-span">Suspendisse eu lorem massa. Integer sit amet posuere tellus.</span>
-                        <div class="blue-button">
-                            <a class="scrollTo" data-scrollTo="popular" href="#"><span id="subform-span">Discover
-                                    More</span></a>
-                        </div>
-                    </div>
-                    <div class="submit-form">
-                        <form id="form-submit" action="" method="get">
-                            <div class="row justify-content-between">
-                                <div class="col-md-9 first-item">
-                                    <fieldset>
-                                        <input name="name" type="text" class="form-control" id="search-name"
-                                            placeholder="Search anything" required>
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-3">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="btn">Search Now</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <!-- header -->
+    <header id="header">
+        <div class="d-flex flex-column">
+            <div class="profile">
+                <img src="/imgs/userimg_default.jpg" alt="" class="img-fluid rounded-circle">
+                <h2 class="text-light"><a href="#">username</a></h2>
+                <div class="social-links mt-3 text-center">
+                    <a href="#" class="social-osu"><i class="bx bxl-osu"></i></a>
+                    <a href="#" class="social-twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="social-youtube"><i class="bx bxl-youtube"></i></a>
+                    <a href="#" class="social-twitch"><i class="bx bxl-twitch"></i></a>
                 </div>
             </div>
+            <nav class="nav-menu">
+                <ul>
+
+                </ul>
+            </nav>
+            <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
         </div>
-    </section>
+    </header>
+
+    <!-- main -->
+
 
     <!-- footer -->
     <footer>

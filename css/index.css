@@ -16,8 +16,9 @@ section.banner {
 }
   
 .banner {
-    background-image: url(../imgs/bg_banner.jpg);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.11)),url(../imgs/bg_banner.jpg);
     width: 100%;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,6 +56,7 @@ section.banner {
     border-bottom: 5px solid #ff8ee6;
     background-color: #fff;
     padding: 15px;
+    border-radius: 5px 5px 0 0;
 }
 
 #banner-h2,#banner-span{
@@ -73,4 +75,13 @@ section.banner {
 #subform-span:hover{
     color: #ff8ee6;
     transition-duration: .15s;
+}
+
+#search-name{
+    width: 100%;
+    text-align: left;
+}
+
+#form-submit{
+    text-align: center;
 }
