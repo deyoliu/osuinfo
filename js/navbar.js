@@ -2,7 +2,7 @@
     //nav fixed top
     let nav = document.querySelector(".navbar");
     let navPosition = nav.offsetTop;
-    console.log(navPosition);
+    // console.log(navPosition);
     function scrollHandler() {
         if (window.scrollY >= navPosition) {
             //  fixed menu
