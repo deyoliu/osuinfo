@@ -60,8 +60,8 @@
                         <a class="dropdown-item" href="#"><span class="nav-drop-text">CPU</span></a>
                         <a class="dropdown-item" href="#"><span class="nav-drop-text">GPU</span></a>
                         <a class="dropdown-item" href="#"><span class="nav-drop-text">Chair</span></a>
-                        <a class="dropdown-item" href="#"><span class="nav-drop-text">In-game Skin</span></a>
                         <a class="dropdown-item" href="#"><span class="nav-drop-text">In-game Setting</span></a>
+                        <a class="dropdown-item" href="#"><span class="nav-drop-text">In-game Skin</span></a>
                     </div>
                 </li>
             </ul>
@@ -82,35 +82,72 @@
         </div>
     </nav>
 
-    <!-- header -->
-    <header id="header">
-        <div class="profile">
-            <img src="/imgs/userimg_default.jpg" id="avatar" class="user-avatar img-fluid rounded-circle">
-            <h2 class="text-light text-center" id="profile-username">username</h2>
-            <div class="social-links mt-3 text-center">
-                <a href="#"><img src="/imgs/icon_osu.png" id="social" class="social-osu"></a>
-                <a href="#"><img src="/imgs/icon_twitter.png" id="social" class="social-twitter"></a>
-                <a href="#"><img src="/imgs/icon_youtube.png" id="social" class="social-youtube"></a>
-                <a href="#"><img src="/imgs/icon_twitch.png" id="social" class="social-twitch"></a>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- sidebar -->
+            <div class="col-3">
+                <div id="header">
+                    <div class="profile">
+                        <img src="/imgs/userimg_default.jpg" id="avatar" class="user-avatar img-fluid rounded-circle">
+                        <h2 class="text-light text-center" id="profile-username">username</h2>
+                        <div class="social-links mt-3 text-center">
+                            <a href="#"><img src="/imgs/icon_osu.png" id="social" class="social-osu"></a>
+                            <a href="#"><img src="/imgs/icon_twitter.png" id="social" class="social-twitter"></a>
+                            <a href="#"><img src="/imgs/icon_youtube.png" id="social" class="social-youtube"></a>
+                            <a href="#"><img src="/imgs/icon_twitch.png" id="social" class="social-twitch"></a>
+                        </div>
+                        <hr>
+                        <div class="stats">
+                            <div id="player-stats" class="global-rank">
+                                <span id="ps1">Rank</span>
+                                <span id="ps-rank"></span>
+                            </div>
+                            <div id="player-stats" class="total-pp">
+                                <span id="ps1">pp</span>
+                                <span id="ps-pp"></span>
+                            </div>
+                            <div id="player-stats" class="total-playcount">
+                                <span id="ps1">pc</span>
+                                <span id="ps-pc"></span>
+                            </div>
+                            <div id="player-stats" class="user-country">
+                                <img src="" id="country" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr>
-            <div class="stats">
-                <div id="player-stats" class="global-rank">
-                    <span id="ps1">Rank</span>
-                    <span id="ps-rank"></span>
+
+            <!-- main -->
+            <div class="col-9">
+                <div class="container">
+                    <section class="user-setup mt-5">
+                        <h3 class="secTitle">user's Gaming Setup</h3>
+                        <p class="secContain">123</p>
+                    </section>
+
+                    <section class="user-setup mt-5">
+                        <h3 class="secTitle">user's PC Setup</h3>
+                        <p class="secContain">123</p>
+                    </section>
+                    <section class="user-setup mt-5">
+                        <h3 class="secTitle">user's In-game Setting</h3>
+                        <p class="secContain">123</p>
+                    </section>
+
+                    <section class="user-setup mt-5">
+                        <h3 class="secTitle">user's In-game Skins</h3>
+                        <p class="secContain">123</p>
+                    </section>
+                    <section class="user-setup mt-5 mb-5">
+                        <h3 class="secTitle">Relative Players</h3>
+                        <p class="secContain">123</p>
+                    </section>
                 </div>
-                <div id="player-stats" class="total-pp">
-                    <span id="ps1">pp</span>
-                    <span id="ps-pp"></span>
-                </div>
-                <div id="player-stats" class="total-playcount">
-                    <span id="ps1">pc</span>
-                    <span id="ps-pc"></span>
-                </div>
-                <div id="player-stats" class="user-country"></div>
             </div>
         </div>
-    </header>
+    </div>
+
 
     <!-- footer -->
     <footer>
