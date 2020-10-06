@@ -102,8 +102,6 @@ hr{
 }
 
 #country{
-    border:1px solid #333333;
-    border-radius: 50%;
     width: 20%;
     margin: auto;
 }

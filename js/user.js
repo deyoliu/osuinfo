@@ -13,6 +13,7 @@ $(document).ready(function () {
             $('#ps-pc').text(data[0].playcount);
             $('#avatar').attr("src", "http://s.ppy.sh/a/" + uid);
             $('#country').attr("src", "../imgs/country-flags/" + data[0].country + ".png").attr("alt", data[0].country);
+            $('#osu-link').attr("href", "https://osu.ppy.sh/users/" + data[0].user_id);
         },
         error: function (xhr, status, error) {
             console.log(error);

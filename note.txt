@@ -1,0 +1,168 @@
+/ 頁面 /
+
+. 全域
+>> navbar連結
+>> footer social links 連結+icons(discord, twitter, 作者網站)
+>> navbar全域搜尋玩家ajax(有包含的字眼全數列出)
+
+. 首頁
+>> 搜尋功能
+>> 熱門搜尋5名(管理員編輯)
+>> 熱門實況主5名(管理員編輯)
+>> 熱門鍵盤5款
+>> 熱門繪版5款
+>> 熱門螢幕5款
+
+. Allstar 全明星
+>> 列出各屆owc入選過前八強國家的八位選手
+
+. Players Top99
+>> 上方列出前5玩家(含特效)
+>> 中間列出剩餘玩家(不含特效)
+>> 下方列出1digit、2digits列表，無大頭貼
+>> 列表thead可以升降冪排列
+
+. Players 三位數
+>> 上方列出3digits owc選手(隨機列出兩列)
+>> 下方列出全3digits列表，無大頭貼
+>> 列表thead可以升降冪排列
+
+. Players 四位數
+>> 上方列出4digits owc選手(隨機列出兩列)
+>> 下方列出全4digits列表，無大頭貼
+>> 列表thead可以升降冪排列
+
+. Players 五位數
+>> 上方列出5digits狗牌玩家(隨機列出兩列)
+>> 下方列出5digits列表，無大頭貼
+>> 列表thead可以升降冪排列
+
+. Players 狗牌玩家
+>> 上方列出狗牌玩家(隨機列出兩列)
+>> 下方列出狗牌玩家列表，無大頭貼
+>> 列表thead可以升降冪排列
+
+. Tournaments 比賽
+
+
+. Guide Monitor 螢幕排行
+
+
+. Guide Keyboard 鍵盤排行
+
+
+. Guide Mouse 滑鼠排行
+
+
+. Guide Mousepad 鼠墊排行
+
+
+. Guide Mouse Bungee 鼠線夾排行
+
+
+. Guide Tablet 繪版排行
+
+
+. Guide Headset 耳機排行
+
+
+. Guide CPU 硬體CPU排行
+
+
+. Guide GPU 硬體顯卡排行
+
+
+. Guide Chair 椅子排行
+
+
+. Guide In-game Setting 遊戲內設置介紹及推薦設置
+
+
+. Guide In-game Skins 遊戲內Skins列表
+
+
+. 個人頁
+
+
+. 個人頁後台
+>> 個人設備、twitter、youtube、twitch的新增、修改、刪除
+
+. 管理員後台
+>> 所有資料的新增、查詢、修改、刪除
+>> 接收聯繫表單，回信功能
+
+. Footer About Us 關於我們
+>> 一般文字頁面
+
+. Footer Privacy Policy 隱私政策
+>> 一般文字頁面
+
+. Footer FAQ & Contact 問題與聯繫
+>> 一般文字頁面
+>> 聯繫表單
+
+
+
+
+/ db /
+
+. db1 users table欄位
+>> uid (pk), int, !nullable
+>> user_id, int, !nullable
+>> user_name, nvarchar(20), !nullable
+>> user_badge_number, int
+>> user_twitter, nvarchar(50)
+>> user_youtube, nvarchar(50)
+>> user_twitch, nvarchar(50)
+>> set_monitor, int
+>> set_monitor_hz, int
+>> set_keyboard, int
+>> set_mouse, int
+>> set_mouse_hz, int
+>> set_mouse_dpi, int
+>> set_mousepad, int
+>> set_mousebungee, int
+>> set_tablet, int
+>> set_cpu, int
+>> set_gpu, int
+>> set_chair, int
+>> ingame_resolution, nvarchar(20)
+>> ingame_isFullScreen, bool
+>> ingame_isSnakingSliders, bool
+>> ingame_volume_music, int
+>> ingame_volume_effect, int
+>> ingame_cursor_size, decimal
+>> ingame_sensitivity, decimal
+>> ingame_isRawInput, bool
+>> ingame_key1, nvarchar(5)
+>> ingame_key2, nvarchar(5)
+>> ingame_skin, nvarchar(100)
+>> window_sensitivity, int
+>> isRestricted, bool
+>> isOwcPlayer, bool
+>> isOwcTop8, bool
+>> isAdmin, bool, !nullable
+
+. db2 setup table欄位
+>> sid (pk), int, !nullable
+>> set_product_name, nvarchar(50), !nullable
+>> set_type, nvarchar(20), !nullable
+>> set_company, nvarchar(20), !nullable
+>> set_hz, int
+>> set_info, nvarchar(MAX)
+
+. db3 contact table欄位
+>> cid (pk), int, !nullable
+>> contact_user, nvarchar(20), !nullable
+>> contact_problem, nvarchar(20), !nullable
+>> contact_info, nvarchar(500), !nullable
+>> isReply, bool
+
+
+. db功能
+>> 玩家設定設備時auto complete
+>> 選定設備後於個人頁自動帶出圖片
+
+
+
+
